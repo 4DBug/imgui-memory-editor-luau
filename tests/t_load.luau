@@ -1,0 +1,7 @@
+local RS = game:GetService("ReplicatedStorage")
+local G = require(RS:WaitForChild("ImGui"))
+local MemoryEditor = require(RS:WaitForChild("MemoryEditor"))(G)
+assert(type(MemoryEditor.new) == "function")
+local ed = MemoryEditor.new()
+assert(ed.Cols == 16 and ed.Open and not ed.ReadOnly and ed.OptShowAscii and ed.PreviewDataType == G.ImGuiDataType.S32)
+print("OK")

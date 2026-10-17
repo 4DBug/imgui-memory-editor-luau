@@ -1,0 +1,11 @@
+{
+	"name": "imgui-memory-editor-luau",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"ImGui": { "$path": "tools/core/build/ImGuiTyped.luau", "Impl": { "$path": "tools/core/build/ImGui.luau" } },
+			"MemoryEditor": { "$path": "MemoryEditor.lua" }
+		},
+		"StarterPlayer": { "StarterPlayerScripts": { "MemoryEditorExample": { "$path": "examples/roblox/main.client.luau" } } }
+	}
+}
